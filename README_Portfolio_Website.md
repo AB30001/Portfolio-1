@@ -27,7 +27,7 @@ This website does not require any special installation process. To view it local
 
 1. Clone the repository to your local machine.
    ```bash
-   git clone https://github.com/YourUsername/YourPortfolioRepository
+   git clone https://github.com/AB30001/Portfolio-1
    ```
 2. Open the `index.html` file in your web browser.
 

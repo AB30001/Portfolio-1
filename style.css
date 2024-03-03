@@ -2,7 +2,7 @@
 
 
 * {
-    max-width: 1920px;
+    max-width: 1400px;
     margin: 0 auto;
     background-color: transparent;
 }
@@ -471,6 +471,12 @@ button:hover {
     border-radius: 50px; 
     margin-bottom: 20px;
 }
+
+.column .card p {
+    color: #757575; /* Light gray color for lighter text */
+    text-align: left; /* Aligns text to the left */
+}
+
 
     
 
