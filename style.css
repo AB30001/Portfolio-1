@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Roboto+Mono:wght@300;400&family=Roboto:wght@100;300;400&display=swap');
+
+
+* {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+html {
+    background-color: #e6dede;
+    scroll-behavior: smooth;
+}
+
+
+}
+h2 {
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+@media (max-width: 768px) {
+    h2 {
+        font-size: 16px;
+    }
+}
+
+
+.github-button {
+    display: inline-block; 
+    background-color: #007bff; 
+    color: white; 
+    padding: 10px 15px; 
+    border-radius: 10px;
+    text-decoration: none; 
+    font-size: 16px;
+    font-weight: bold; 
+    transition: background-color 0.3s ease; }
+
+.github-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+}
+
+
+#latest-news {
+    color:  black !important;
+    font-family:'Inter', sans-serif;
+    margin-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.latest-news-headline {
+    background-color: #fff;
+}
+/*header styles*/
+
+li, a, button {
+    font-family:'Inter', sans-serif; 
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px 5px 5px; /* top, right, bottom, left */
+    background-color: #333333;
+    font-family: 'Inter', sans-serif;;
+}
+
+.logo {
+    cursor: pointer;
+    margin: 0px;
+    background-color: #333333;
+    
+}
+
+
+#logo-div {
+
+    margin: 0px;
+    
+}
+nav ul {
+    background-color: #333333;
+}
+
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    transition: all 0.3s ease 0s;
+    color: #79e08c ;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(63, 167, 82, 0.8);
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    
+}
+
+button:hover {
+    background-color: rgba(63, 167, 82, 0.5); 
+} 
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; 
+        text-align: center;
+        padding: 20px 5%;
+    }
+
+    .nav-links {
+        margin-top: 0px; 
+        padding: 1px;
+    }
+
+    .nav-links li {
+        display: block; 
+        margin-bottom: 10px; 
+    }
+
+    
+
+    .logo {
+        max-width: 80%; 
+    }
+}
+
+
+
+
+
+/*header styles end*/
+
+/* Styles for the hero banner */
+
+
+
+.hero-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-image: url('assets/2.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    max-height: 500px;
+
+    }
+
+
+    
+   
+/* hero banner, media query for smaller screens */
+    @media (max-width: 768px) {
+        .hero-banner
+        {
+        background-size: auto; 
+        
+        }
+    }
+    
+
+/* Styles for the hero banner end */
+
+/* Styles for projects containers */
+
+.news-containers {
+    background-color: transparent; /* Background color for the news section */
+    color: rgb(3, 3, 3);
+    
+}
+
+
+
+
+
+/*STYLES FOR LATEST NEWS CONTAINERS!!! START HERE*/
+/* Style for the row of cards */
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    }
+
+@media (max-width: 768px) {
+
+    .row{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+/* Style for each column */
+.column {
+    flex: 1;
+    max-width: 30%;
+    margin-bottom: 20px;} /* spacing between columns 
+}
+    
+
+
+
+/* Style for each card */
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05); /* 5% when hovered */
+}
+
+/* Style for the card image */
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for the card header */
+.card h2 {
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;;
+}
+.card {
+    box-shadow: 5px 5px 10px rgba(34, 33, 33, 0.5);
+}
+
+/* Style for the date, date text, button read more */
+.details {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* Style for the "Read More(visit website)" button */
+.read-more {
+    background-color: #425dd4;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    
+}
+
+.read-more:hover {
+    background-color: #5671f5; /* Lighter shade of blue */
+    transform: scale(1.05); /* Slightly larger */
+}
+
+/* Style for the icon in the button visit-vebsite */
+.read-more i {
+    margin-left: 5px;
+    
+}
+
+@media (max-width: 768px) {
+    .column {
+        max-width: 100%; /* Take up full width on smaller screens */
+        padding: 10px
+    }
+    
+}
+
+
+/*footer styles*/
+
+.footer {
+    background-color: #333 !important;
+    padding: 20px 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.footer-column {
+    flex: 1;
+    padding: 0px;
+    max-width: 25%;
+    margin: 10px;
+}
+
+.footer-column-name {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.footer p {
+    color: #aaa; 
+    margin-bottom: 10px;
+    
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+
+
+
+
+.fa-instagram, 
+.fa-facebook, 
+.fa-x-twitter, 
+.fa-linkedin-in {
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+
+
+@media (max-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer div h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .footer-column {
+        max-width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .footer-column-name { 
+        margin-top: 10px;
+    }
+
+    .fa-instagram, 
+    .fa-facebook, 
+    .fa-x-twitter, 
+    .fa-linkedin-in {
+        margin: 0 5px;
+    }
+}
+
+
+/*footer styles END*/
+
+
+/*styles page buttom back to top*/
+
+#back-to-top-div {
+    display: flex;
+    justify-content: center; 
+    position: relative;
+    width: 100%;
+    background-color: #504646;
+}
+
+.back-to-top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #504646;
+    border: 2px solid whitesmoke;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: medium;
+    text-decoration: none;
+    cursor: pointer; 
+}
+
+#about-me {
+    background-color: #ffffff; 
+    padding: 40px; 
+    margin: 10px 0px 10px 0px; /*top, right, buttom, left*/
+    
+}
+
+
+
+#about-me p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px; 
+    line-height: 1.6; 
+    color: #666; 
+}
+
+
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333; /* GitHub icon and text color */
+    font-size: 24px; 
+    transition: color 0.3s ease;
+}
+
+.github-link .fab {
+    margin-right: 8px; /
+    font-size: 1.5em; 
+}
+
+.github-link:hover {
+    color: #007bff; 
+}
+
+
+.wizard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /
+
+    
+    max-width: 600px; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.wizard img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 50px; 
+    margin-bottom: 20px;
+}
+
+    
+
+
+    
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+   
